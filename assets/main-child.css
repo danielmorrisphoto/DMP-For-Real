@@ -24,3 +24,14 @@
     padding-left: 14px;
     position: relative; top: 7px;
 }
+.big-menu-items a{
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-size: 14em;
+    color: white;
+    line-height: 1.1;
+    padding-left: 135px;
+}
+.big-menu-items a:hover{
+    color:#75d1f7;
+    text-decoration: none;
+}
