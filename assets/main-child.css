@@ -43,3 +43,13 @@
     transition: display 1500ms linear 0s;
     overflow:hidden;
 }
+.top-image{
+    position: relative; top: 0px; left: 0px; z-index: 0;
+    max-width: 100%;
+}
+.double-image{
+    max-width: 100%;
+}
+.port-images{
+    position: relative; top: 0px; left: 0px; z-index: 0;
+}
