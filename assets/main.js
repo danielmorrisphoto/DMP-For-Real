@@ -4,7 +4,7 @@ $(document).ready(function() {
                 interval: 5000
         })
 });
-
+$("div.navbar-fixed-top").autoHidingNavbar();
 
 // WHY DID I ADD THIS FUCNTION FOR?
 // var checkitem = function() {
