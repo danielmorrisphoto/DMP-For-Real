@@ -19,7 +19,7 @@
 
 <style>
 .navbar{
-    position: relative; z-index: 1;
+    position: relative; z-index: 2;
     height: 200px;
 }
 
@@ -54,19 +54,19 @@
                     <nav class="navbar">
                             <div class="contaier-fluid">
                                 <div class="big-menu-items">
-                                    <a href="overview.html" />OVERVIEW</a>
+                                    <a id="overview_label" href="overview.html">OVERVIEW</a>
                                 </div>
                                 <div class="big-menu-items">
-                                    <a href="portraits.html" />PORTRAITS</a>
+                                    <a  id="portrait_label" href="portraits.html">PORTRAITS</a>
                                 </div>
                                 <div class="big-menu-items">
-                                    <a href="travel.html" />TRAVEL</a>
+                                    <a id="travel_label" href="travel.html">TRAVEL</a>
                                 </div>
                                 <div class="big-menu-items">
-                                    <a href="food.html" />FOOD</a>
+                                    <a href="food.html">FOOD</a>
                                 </div>
                                 <div class="big-menu-items">
-                                    <a href="fitness.html" />FITNESS</a>
+                                    <a href="fitness.html">FITNESS</a>
                                 </div>
                             </div>
                     </nav>
@@ -76,13 +76,13 @@
                     <div id="myCarousel" class="carousel slide" data-ride="carousel" wrap="true">
                     <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="../images/landing/170304_PR-147.jpg" alt="First Slide" />
+                            <div class="item active" id="portrait_foto">
+                                <img id="170304_PR-147" src="../images/landing/170304_PR-147.jpg" alt="First Slide" />
                             </div>
-                            <div class="item">
+                            <div class="item" id="overview_foto">
                                 <img src="../images/landing/170401_VSJ-132.jpg" alt="Second Slide" />
                             </div>
-                            <div class="item">
+                            <div class="item" id="travel_foto">
                                 <img src="../images/landing/170221_Piloto-72.jpg" alt="Third Slide" />
                             </div>
                         </div>
