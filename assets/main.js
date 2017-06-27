@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
         $('.carousel').carousel({
-                interval: 5000
+                interval: 3000
         })
 });
 $("div.navbar-fixed-top").autoHidingNavbar();
