@@ -35,10 +35,11 @@
     color:#75d1f7;
     text-decoration: none;
 }
-.carousel-inner .item img{
+/*.carousel-inner .item img{
     transition: 4000ms linear 0s;
     transform: scale(1.10, 1.10);
-}
+    animation-timing-function: ease-in-out;
+}*/
 .item img{
     transition: display 1500ms linear 0s;
     overflow:hidden;
@@ -52,4 +53,28 @@
 }
 .port-images{
     position: relative; top: 0px; left: 0px; z-index: 0;
+}
+
+/*Carousel zooming test*/
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.carousel-inner .item > img {
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
 }
