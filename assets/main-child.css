@@ -1,4 +1,8 @@
-
+.navbar{
+    z-index: 2;
+    height: 200px;
+    width: 100%;
+}
 .logo img{
     position: relative; top: 40px; left: 20px; z-index: 3;
     height: 60px;;
@@ -8,7 +12,7 @@
 }
 .menu-items img{
     padding-left: 30px;
-    height: 35px;
+    height: 30px;
 }
 #myCarousel{
     position: fixed; top: 0px; left: 0px; z-index: 0;
@@ -35,11 +39,6 @@
     color:#75d1f7;
     text-decoration: none;
 }
-/*.carousel-inner .item img{
-    transition: 4000ms linear 0s;
-    transform: scale(1.10, 1.10);
-    animation-timing-function: ease-in-out;
-}*/
 .item img{
     transition: display 1500ms linear 0s;
     overflow:hidden;
@@ -54,27 +53,37 @@
 .port-images{
     position: relative; top: 0px; left: 0px; z-index: 0;
 }
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.portafolio-title div{
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-size: 14em;
+    color: white;
+    line-height: 1.1;
+    padding-left: 135px;
+    z-index: 3;
+    position: relative;
+}
+
 
 /*Carousel zooming test*/
 @-webkit-keyframes zoom {
-  from {
+from {
     -webkit-transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.5, 1.5);
-  }
 }
+to {
+    -webkit-transform: scale(1.5, 1.5);
+}}
 
 @keyframes zoom {
-  from {
-    transform: scale(1, 1);
-  }
-  to {
-    transform: scale(1.5, 1.5);
-  }
-}
+    from {transform: scale(1, 1);
+} to 
+    {transform: scale(1.5, 1.5);
+}}
 
 .carousel-inner .item > img {
-  -webkit-animation: zoom 20s;
-  animation: zoom 20s;
+-webkit-animation: zoom 20s;
+animation: zoom 20s;
 }

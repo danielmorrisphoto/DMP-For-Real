@@ -1,20 +1,21 @@
 
-$(document).ready(function() {
-        $('.carousel').carousel({
-                interval: 3000
-        })
-});
-$("div.navbar-fixed-top").autoHidingNavbar();
-
 
 // Cuando el mouse esta sobre el texto con id portrait
 // ense~ana la foto con id portrait_foto
 
 
 $(document).ready(function () {
+
+        // $("nav.navbar.navbar-fixed-top").autoHidingNavbar();
+        
+
+        $('#myCarousel.carousel').carousel({
+                interval: 4000
+        })
+
     $('#portrait_label').hover(function(){
         $('.carousel-inner').children().removeClass('active');
-        $('#portrait_foto').addClass('active'); //to make text underlined on hover
+        $('#portrait_foto').addClass('active');
         $('.carousel').carousel('pause');
         /// $('#image').show(); //displays image on mouse in
     },function(){
@@ -23,7 +24,7 @@ $(document).ready(function () {
 
     $('#overview_label').hover(function(){
         $('.carousel-inner').children().removeClass('active');
-        $('#overview_foto').addClass('active'); //to make text underlined on hover
+        $('#overview_foto').addClass('active');
         $('.carousel').carousel('pause');
         /// $('#image').show(); //displays image on mouse in
     },function(){
@@ -32,7 +33,7 @@ $(document).ready(function () {
 
     $('#travel_label').hover(function(){
         $('.carousel-inner').children().removeClass('active');
-        $('#travel_foto').addClass('active'); //to make text underlined on hover
+        $('#travel_foto').addClass('active');
         $('.carousel').carousel('pause');
         /// $('#image').show(); //displays image on mouse in
     },function(){
@@ -40,8 +41,3 @@ $(document).ready(function () {
     });
 });
 
-// $('#formcontainer').hover(function(){
-//    $("#myCarousel4").carousel('pause');
-// },function(){
-//    $("#myCarousel4").carousel('cycle');
-// });
