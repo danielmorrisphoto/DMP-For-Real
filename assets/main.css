@@ -25,3 +25,11 @@
 .carousel-inner > .item > img {
     max-width: 100%;
 }
+.social-icons img{
+    height: 30px;
+    float: left;
+}
+/*This ia affecting both children...needs to be fixed*/
+.social-icons img:last-child{
+    padding-left: 10px;
+}
