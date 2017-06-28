@@ -66,6 +66,14 @@
     z-index: 3;
     position: relative;
 }
+.contact-info{
+    position: absolute; top: 340px; left: 125px; z-index: 1;
+    color: #e1e1e1;
+    font-size: 1.1em;
+}
+.contact-info a{
+    color: white;
+}
 
 
 /*Carousel zooming test*/
