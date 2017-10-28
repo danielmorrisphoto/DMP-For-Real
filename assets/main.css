@@ -23,7 +23,8 @@
     height: 100%;
 }
 .carousel-inner > .item > img {
-    max-width: 100%;
+    background-size: contain;
+    background-position: center;
 }
 .social-icons img{
     height: 30px;
@@ -33,3 +34,7 @@
 .social-icons img:last-child{
     padding-left: 10px;
 }
+
+
+
+    
