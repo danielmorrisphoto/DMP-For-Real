@@ -18,6 +18,8 @@
     border-radius: 0 !important;
 }
 
+/*POSSIBLE PROBLEMS BELOW AFFECTING RESPONSIVE IMAGES & CAROUSEL*/
+
 #myCarousel{
     position: fixed; top: 0px; left: 0px; z-index: 0;
     width: 100%; 
@@ -39,6 +41,7 @@
 .social-icons img:last-child{
     padding-left: 10px;
 }
+
 
 /* !!Media Queries!! */
 /* Mobile */
@@ -80,3 +83,4 @@
         width: 60%;
     }
 }
+*/
