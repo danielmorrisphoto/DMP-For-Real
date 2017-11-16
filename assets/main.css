@@ -18,69 +18,24 @@
     border-radius: 0 !important;
 }
 
-/*POSSIBLE PROBLEMS BELOW AFFECTING RESPONSIVE IMAGES & CAROUSEL*/
-
 #myCarousel{
     position: fixed; top: 0px; left: 0px; z-index: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
-/*
-.carousel-inner > .item > img {
-    background-size: contain;
+
+.full-screen {
+    background-size: cover;
     background-position: center;
-    width: 100%;
-}
-*/
+    background-repeat: no-repeat;
+}   
 
 .social-icons img{
     height: 30px;
     float: left;
 }
+
 /*This ia affecting both children...needs to be fixed*/
 .social-icons img:last-child{
     padding-left: 10px;
 }
-
-
-/* !!Media Queries!! */
-/* Mobile */
-@media (max-width: 767px) {
-    .item {
-        height: auto;
-    }
-    .item > img {
-        width: 80%;
-    }
-}
-
-/* tablets */
-@media (max-width: 991px) and (min-width: 768px) {
-    .item {
-        height: auto;
-    }
-    .item > img {
-        width: 80%;
-    }
-}
-
-/* laptops */
-@media (max-width: 1023px) and (min-width: 992px) {
-    .item {
-        height: 200px;
-    }
-    .item > img {
-        width: 80%;
-    }
-}
-
-/* desktops */
-@media (min-width: 1024px) {
-    .item {
-        height: 300px;
-    }
-    .item > img {
-        width: 60%;
-    }
-}
-*/
