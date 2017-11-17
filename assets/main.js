@@ -47,6 +47,7 @@ $(document).ready(function () {
         /// $('#image').show(); //displays image on mouse in
     },function(){
         $('.carousel').carousel('cycle'); //remove underline on mouse out
-    });
+    }); 
 });
+
 

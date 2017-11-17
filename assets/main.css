@@ -22,12 +22,6 @@
     position: fixed; top: 0px; left: 0px; z-index: 0;
     width: 100%;
     height: 100%;
-}
-
-.full-screen {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }   
 
 .social-icons img{
@@ -38,4 +32,113 @@
 /*This ia affecting both children...needs to be fixed*/
 .social-icons img:last-child{
     padding-left: 10px;
+}
+
+
+/*!!!!Below is from Child-main.css --------------------------------------------------------------------------------------------------Tryingt to integrate both!!!!!*/
+
+
+
+.navbar{
+    z-index: 2;
+    height: 200px;
+    width: 100%;
+}
+.logo img{
+    position: relative; top: 40px; left: 20px; z-index: 3;
+    height: 60px;;
+}
+.menu-items{
+    float: right;
+}
+.menu-items img{
+    padding-left: 30px;
+    height: 30px;
+}
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+/*
+.carousel-inner > .item > img {
+    min-width: 100%;
+}
+*/
+.bkg-img{
+    max-width: 100%;
+}
+
+.menu-icons img{
+    height: 26px;
+    float: right;
+    padding-left: 14px;
+    position: relative; top: 7px;
+}
+.big-menu-items a{
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-size: 14em;
+    color: white;
+    line-height: 1.1;
+    padding-left: 135px;
+}
+.big-menu-items a:hover{
+    color:#75d1f7;
+    text-decoration: none;
+}
+.item img{
+    transition: display 1500ms linear 0s;
+    overflow:hidden;
+}
+.top-image{
+    position: relative; top: 0px; left: 0px; z-index: 0;
+    max-width: 100%;
+}
+.double-image{
+    max-width: 100%;
+}
+.port-images{
+    position: relative; top: 0px; left: 0px; z-index: 0;
+}
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.portafolio-title div{
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    font-size: 14em;
+    color: white;
+    line-height: 1.1;
+    padding-left: 135px;
+    z-index: 3;
+    position: relative;
+}
+.contact-info{
+    position: absolute; top: 340px; left: 125px; z-index: 1;
+    color: #e1e1e1;
+    font-size: 1.1em;
+}
+.contact-info a{
+    color: white;
+}
+
+
+/*Carousel zooming*/
+@-webkit-keyframes zoom {
+from {
+    -webkit-transform: scale(1, 1);
+}
+to {
+    -webkit-transform: scale(1.5, 1.5);
+}}
+
+@keyframes zoom {
+    from {transform: scale(1, 1);
+} to 
+    {transform: scale(1.5, 1.5);
+}}
+
+.carousel-inner .item > img {
+-webkit-animation: zoom 20s;
+animation: zoom 20s;
 }
